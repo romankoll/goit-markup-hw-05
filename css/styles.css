@@ -56,6 +56,13 @@ img {
   margin: 0 auto;
 }
 /*------reset end-----*/
+/*------TRANSITION-----*/
+.transitions {
+  transition-property: color, background-color, box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 /*--------------HEADER---------------*/
 
 .header {
@@ -315,6 +322,10 @@ img {
 
   background: var(--text-fon-white-color);
   color: #afb1b8;
+
+  transition-property: color, background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social-link:hover,
 .social-link:focus {
@@ -523,3 +534,16 @@ img {
   color: var(--text-paragraf-color);
 }
 /*--------------portfolio-main--------------*/
+/*--------------MODAL WINDOW--------------
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(2px);
+}
+*/
