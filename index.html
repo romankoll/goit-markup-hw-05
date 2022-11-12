@@ -511,15 +511,20 @@
         </div>
       </div>
     </footer>
-    <!------------MADAL WINDOW----------
-    <div class="backdrop">
+
+    <!------------MADAL WINDOW------------>
+    <button data-modal-open>Відкриття модального вікна</button>
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button>
+        <button data-modal-close>
+          Закриття
           <svg class="" width="" height="">
             <use href=""></use>
           </svg>
         </button>
       </div>
-    </div>   -->
+    </div>
+
+    <script src="./js/modal.js"></script>
   </body>
 </html>
