@@ -538,8 +538,23 @@ img {
 
   color: var(--text-fon-white-color);
 }
+.social-link {
+  background: var(--text-fon-white-color);
+  color: #afb1b8;
+
+  transition-property: color, background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
 
 .social-link-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+
   color: var(--text-fon-white-color);
   background: rgba(255, 255, 255, 0.1);
 
@@ -547,7 +562,10 @@ img {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
+.social-link-footer:hover,
+.social-link-footer:focus {
+  background-color: var(--link-focus-color);
+}
 /*--------------footer---------------*/
 /*--------------portfolio-main--------------*/
 .main {
